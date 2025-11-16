@@ -42,7 +42,6 @@ router.post('/', async (req, res) => {
     
     // Send email notification (optional)
     // Uncomment and configure if you want email notifications
-    /*
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -65,7 +64,6 @@ router.post('/', async (req, res) => {
         <p><strong>Message:</strong> ${req.body.message}</p>
       `
     });
-    */
 
     res.status(201).json({ 
       message: 'Contact form submitted successfully',

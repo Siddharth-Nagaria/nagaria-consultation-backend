@@ -1,0 +1,78 @@
+# -----------------------------
+# Node Backend Gitignore
+# -----------------------------
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules/
+
+# Build outputs
+dist/
+build/
+out/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Coverage directories
+coverage/
+.nyc_output/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Cache
+.cache/
+.eslintcache
+.stylelintcache
+
+# PM2 logs
+.pids
+*.pid
+*.seed
+*.pid.lock
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor Settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# TypeScript
+*.tsbuildinfo
+
+# Local config files
+config.local.json
+*.local.js
+*.local.ts
+
+# Debugging files
+npm-debug.log*
+debug.log
+
+# Optional: Prisma (if using)
+prisma/*.db
+prisma/migrations/*-dev/
+
+# Optional: Docker
+docker-data/
+
+# Optional: uploads, storage (backend file storage)
+uploads/
+storage/
+public/uploads/
