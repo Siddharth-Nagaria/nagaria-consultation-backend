@@ -47,7 +47,7 @@ router.post('/', async (req, res) => {
     try {
       await resend.emails.send({
         from: "Website Contact <onboarding@resend.dev>",
-        to: process.env.ADMIN_EMAIL,
+        to: process.env.EMAIL_USER,
         subject: `New Contact Submission: ${req.body.subject}`,
         html: `
           <h2>New Contact Form Submission</h2>
